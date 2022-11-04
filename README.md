@@ -74,9 +74,12 @@ Agora vamos ver a mensagem DHCP Offer. Localize o datagrama IP que contém a men
 8. Qual é o endereço IP de destino utilizado no datagrama que contém a mensagem de Oferta? Há algo de especial neste endereço? Explique. 
 9. Agora inspecione o campo de opções na mensagem DHCP Offer. Quais são as cinco informações que o servidor DHCP está fornecendo ao cliente DHCP na mensagem DHCP Offer?
 
-Parece que, uma vez recebida a mensagem de oferta de DHCP, o cliente pode ter todas as informações necessárias para prosseguir. No entanto, o cliente pode ter recebido OFERTAS de vários servidores DHCP e, portanto, é necessária uma segunda fase, com mais duas mensagens obrigatórias – a mensagem DHCP Request cliente-servidor e a mensagem DHCP ACK servidor-cliente é necessária. Mas pelo menos o cliente sabe que existe pelo menos um servidor DHCP por aí! Vamos dar uma olhada na mensagem DHCP Request, lembrando que embora já tenhamos visto uma mensagem Discover em nosso trace, nem sempre é o caso quando uma mensagem de solicitação DHCP é enviada.
+Parece que, uma vez recebida a mensagem de oferta de DHCP, o cliente pode ter todas as informações necessárias para prosseguir. No entanto, o cliente pode ter recebido OFERTAS de vários servidores DHCP e, portanto, é necessária uma segunda fase, com mais duas mensagens obrigatórias – a mensagem DHCP Request cliente-servidor e a mensagem DHCP ACK servidor-cliente é necessária. Mas pelo menos o cliente sabe que existe pelo menos um servidor DHCP por aí! 
+
+Vamos dar uma olhada na mensagem DHCP Request, lembrando que embora já tenhamos visto uma mensagem Discover em nossa captura, nem sempre é o caso quando uma mensagem de solicitação DHCP é enviada.
 
 Localize o datagrama IP que contém a primeira mensagem de solicitação de DHCP em seu rastreamento e responda às perguntas a seguir.
+
 10. Qual é o número da porta de origem UDP no datagrama IP que contém a primeira mensagem de solicitação de DHCP em seu rastreamento? Qual é o número da porta de destino UDP que está sendo usado?
 11. Qual é o endereço IP de origem no datagrama IP que contém esta mensagem de solicitação? Há algo de especial neste endereço? Explique.
 12. Qual é o endereço IP de destino usado no datagrama que contém esta mensagem de solicitação. Há algo de especial neste endereço? Explique.
@@ -86,6 +89,7 @@ Localize o datagrama IP que contém a primeira mensagem de solicitação de DHCP
 Que diferenças você vê entre as entradas na opção 'lista de solicitações de parâmetros' nesta mensagem de solicitação e a mesma opção de lista na mensagem anterior de descoberta?
 
 Localize o datagrama IP que contém a primeira mensagem DHCP ACK em seu rastreamento e responda às seguintes perguntas.
+
 15. Qual é o endereço IP de origem no datagrama IP que contém esta mensagem ACK? Há algo de especial neste endereço? Explique.
 16. Qual é o endereço IP de destino usado no datagrama que contém esta mensagem ACK. Há algo de especial neste endereço? Explique.
 17. Qual é o nome do campo na mensagem DHCP ACK (como indicado na janela Wireshark) que contém o endereço IP do cliente atribuído?
