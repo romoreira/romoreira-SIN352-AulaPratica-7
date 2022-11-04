@@ -127,7 +127,7 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 
 ![PC Config](laptop-config.PNG)
 
-| PC/Laptop | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| PC/Laptop | IPv4 Address | Mark |
+| --- | --- | --- |
+| git status | List all new or modified files | A |
+| git diff | Show file differences that haven't been staged | B |
