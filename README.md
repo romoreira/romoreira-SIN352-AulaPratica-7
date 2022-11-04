@@ -109,4 +109,4 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 
 * Crie um topologia conforme a figura abaixo:
 
-![alt text](http://url/to/img.png)
+![Topology](topology.png)
