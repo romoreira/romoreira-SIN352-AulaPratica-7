@@ -104,7 +104,7 @@ Necessário Windows :window:
 
 Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para compreender a dinâmica de endereçamento IPv4. Para isso, será necessário fazer o download da Ferramenta Cisco Packet Tracer. Para isso faça:
 
-* Abra o [https://skillsforall.com/course/getting-started-cisco-packet-tracer](Site Network Academy) e registre-se com seu e-mail @ufv para poder baixar o Cisco Packet Trace.
+* Abra o [Site Network Academy](https://skillsforall.com/course/getting-started-cisco-packet-tracer/) e registre-se com seu e-mail @ufv para poder baixar o Cisco Packet Trace.
 * Após feito o registro, instale e logue com o e-mail (@UFV) utilizado para baixar o Packet Trace.
 
 * Crie um topologia conforme a figura abaixo:
