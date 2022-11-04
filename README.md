@@ -34,7 +34,7 @@ Responda: :notebook:
 
 ***
 
-## Dynamic Host Configuration Protocol
+## Dynamic Host Configuration Protocol (DHCP)
 
 Nesta parte, veremos o protocolo de configuração de host dinâmico, DHCP. Lembre-se de que o DHCP é usado extensivamente em LANs corporativas, universitárias e domésticas com fio e sem fio para atribuir dinamicamente endereços IP a hosts, bem como para configurar outras informações de configuração de rede.
 
