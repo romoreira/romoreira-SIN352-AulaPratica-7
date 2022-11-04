@@ -108,3 +108,5 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 * Após feito o registro, instale e logue com o e-mail (@UFV) utilizado para baixar o Packet Trace.
 
 * Crie um topologia conforme a figura abaixo:
+
+![alt text](http://url/to/img.png)
