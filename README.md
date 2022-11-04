@@ -24,7 +24,7 @@ Faça o seguinte:
 
 Responda: :notebook:
 
-1. Encontre o primeiro datagrama IP contendo a primeira parte do segmento enviado para 128.119.245.12 enviado pelo seu computador através do comando traceroute para gaia.cs.umass.edu (aplique um filtro no wireshark com `ip.dst == 128.119.245.12`), depois de especificar que o comprimento do pacote traceroute deve ser 3000. (Dica : Este é o pacote 179 no arquivo de rastreamento ip-wireshark-trace1-1.pcapng. Os pacotes 179, 180 e 181 são três datagramas IP criados pela fragmentação do primeiro segmento UDP de 3.000 bytes enviado para 128.119.145.12). Esse segmento foi fragmentado em mais de um datagrama IP? (Dica: a resposta é sim!)
+1. Encontre o primeiro datagrama IP contendo a primeira parte do segmento enviado para 128.119.245.12 enviado pelo seu computador através do comando traceroute para gaia.cs.umass.edu (aplique um filtro no wireshark com `ip.dst == 128.119.245.12`), depois de especificar que o comprimento do pacote traceroute deve ser 3000. (Dica : Este é o pacote 179 no arquivo de rastreamento [ip-wireshark-trace1-1.pcapng]([other_file.md](https://github.com/romoreira/romoreira-SIN352-AulaPratica-7/blob/main/ip-wireshark-trace1-1.pcapng)). Os pacotes 179, 180 e 181 são três datagramas IP criados pela fragmentação do primeiro segmento UDP de 3.000 bytes enviado para 128.119.145.12). Esse segmento foi fragmentado em mais de um datagrama IP? (Dica: a resposta é sim!)
 2. Quais informações no cabeçalho IP indicam que este datagrama foi fragmentado?
 3. Quais informações no cabeçalho IP deste pacote indicam se este é o primeiro fragmento versus o último fragmento?
 4. Quantos bytes existem neste datagrama IP (cabeçalho mais carga útil)?
