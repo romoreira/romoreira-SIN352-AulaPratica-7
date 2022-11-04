@@ -55,3 +55,6 @@ sudo dhclient eth0
 ```
 onde, como acima, eth0 é a interface na qual você está atualmente capturando pacotes. Isso fará com que o protocolo DHCP solicite e receba um endereço IP e outras informações do servidor DHCP.
 4. Após aguardar alguns segundos, pare a captura do Wireshark.
+
+
+Se você não conseguir executar o Wireshark em uma conexão de rede ativa, não conseguir capturar todas as quatro mensagens DHCP ou for designado para isso, você pode usar o arquivo de rastreamento do Wireshark, dhcp-wireshark-trace1-1.pcapng (anexada à este repositório). Você pode também baixar esse rastreamento, mesmo se tiver capturado seu próprio rastreamento e usá-lo, bem como seu próprio rastreamento, enquanto explora as perguntas abaixo.
