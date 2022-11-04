@@ -35,3 +35,23 @@ Responda: :notebook:
 ***
 
 ## Dynamic Host Configuration Protocol
+
+Nesta parte, veremos o protocolo de configuração de host dinâmico, DHCP. Lembre-se de que o DHCP é usado extensivamente em LANs corporativas, universitárias e domésticas com fio e sem fio para atribuir dinamicamente endereços IP a hosts, bem como para configurar outras informações de configuração de rede.
+
+As duas primeiras etapas do protocolo DHCP na Figura 4.24 (usando as mensagens Discover e Offer) são opcionais (no sentido de que nem sempre precisam ser usadas quando, por exemplo, um novo endereço IP é necessário ou um endereço DHCP existente é ser renovado); as mensagens Request e ACK não são. Para coletar uma captura Wireshark que conterá todos os quatro tipos de mensagem DHCP, precisaremos realizar algumas ações de linha de comando em no Linux.
+
+
+Em uma máquina Linux:
+..* Em uma janela/shell de terminal, digite os seguintes comandos:
+```
+sudo ip addr flush eth0
+sudo dhclient -r
+```
+onde eth0 (neste exemplo) é a interface na qual você deseja capturar pacotes usando o Wireshark. Você pode encontrar facilmente a lista de nomes de interface no Wireshark escolhendo Capture -> Options. Este comando removerá o endereço IP existente da interface e liberará quaisquer concessões de endereço DHCP existentes.
+2. Inicie o Wireshark, capturando pacotes na interface que você desconfigura na Etapa 1.
+3. Na janela/shell do terminal, digite o seguinte comando:
+```
+sudo dhclient eth0
+```
+onde, como acima, eth0 é a interface na qual você está atualmente capturando pacotes. Isso fará com que o protocolo DHCP solicite e receba um endereço IP e outras informações do servidor DHCP.
+4. Após aguardar alguns segundos, pare a captura do Wireshark.
