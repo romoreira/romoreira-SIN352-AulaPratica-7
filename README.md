@@ -110,3 +110,24 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 * Crie um topologia conforme a figura abaixo:
 
 ![Topology](topology.png)
+
+* Escolha a opção Switch e clique e arraste para a área de trabalho do Cisco Packet Tracer.. Figura abaixo: 
+
+![Topology](choose-switch.PNG)
+
+* Clique a opção End Devices, escolha PC ou Laptop clieque e arraste para a área de trabalho do Cisco Packet Tracer. Figura abaixo:
+
+![Topology](choose-pc.PNG)
+
+* Clique na opção Connections, escolha a primeira (raio) e clique no PC/Laptop depois no Switch). Faça isso para os Quatro hosts que você inseriu na topologia. Figura abaixo:
+
+![Topology](choose-link.PNG)
+
+* Clique no PC/Laptop e abrirá uma tela de configuração. Vá até a configuração da interface e adicione o IP conforme a Tabela. Figura abaixo:
+
+![PC Config](laptop-config.PNG)
+
+| PC/Laptop     | IP Address    | Mask | 
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
