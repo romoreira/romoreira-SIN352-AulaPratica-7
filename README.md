@@ -129,5 +129,7 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 
 | PC/Laptop | IPv4 Address | Mark |
 | --- | --- | --- |
-| git status | List all new or modified files | A |
-| git diff | Show file differences that haven't been staged | B |
+| 0 | 192.168.0.1 | 255.255.255.0 |
+| 1 | 192.168.0.2 | 255.255.255.0 |
+| 2 | 192.168.1.1 | 255.255.255.0 |
+| 3 | 192.168.1.2 | 255.255.255.0 |
