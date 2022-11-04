@@ -57,4 +57,38 @@ onde, como acima, eth0 é a interface na qual você está atualmente capturando 
 4. Após aguardar alguns segundos, pare a captura do Wireshark.
 
 
-Se você não conseguir executar o Wireshark em uma conexão de rede ativa, não conseguir capturar todas as quatro mensagens DHCP ou for designado para isso, você pode usar o arquivo de rastreamento do Wireshark, dhcp-wireshark-trace1-1.pcapng (anexada à este repositório). Você pode também baixar esse rastreamento, mesmo se tiver capturado seu próprio rastreamento e usá-lo, bem como seu próprio rastreamento, enquanto explora as perguntas abaixo.
+Se você não conseguir executar o Wireshark em uma conexão de rede ativa, não conseguir capturar todas as quatro mensagens DHCP ou for designado para isso, você pode usar o arquivo de rastreamento do Wireshark, [dhcp-wireshark-trace1-1.pcapng](https://github.com/romoreira/romoreira-SIN352-AulaPratica-7/blob/main/dhcp-wireshark-trace1-1.pcapng) (anexada à este repositório). Você pode também baixar essa captura, mesmo se tiver capturado seu próprio rastreamento e usá-lo, bem como seu próprio rastreamento, enquanto explora as perguntas abaixo.
+
+Vamos começar examinando a mensagem DHCP Discover. Localize o datagrama IP que contém a primeira mensagem Discover em seu rastreamento.
+
+1. Esta mensagem DHCP Discover é enviada usando UDP ou TCP como protocolo de transporte subjacente?
+2. Qual é o endereço IP de origem usado no datagrama IP que contém a mensagem Discover? Há algo de especial neste endereço? Explique.
+3. Qual é o endereço IP de destino usado no datagrama que contém a mensagem Discover. Há algo de especial neste endereço? Explique.
+4. Qual é o valor no campo ID da transação desta mensagem DHCP Discover?
+5. Agora inspecione o campo de opções na mensagem DHCP Discover. Quais são as cinco informações (além de um endereço IP) que o cliente está sugerindo ou solicitando para receber do servidor DHCP como parte dessa transação DHCP?
+
+Agora vamos ver a mensagem DHCP Offer. Localize o datagrama IP que contém a mensagem DHCP Offer em seu rastreamento que foi enviado por um servidor DHCP na resposta à mensagem DHCP Discover que você estudou nas perguntas 1-5 acima.
+
+6. Como você sabe que esta mensagem de Oferta está sendo enviada em resposta à mensagem DHCP Discover que você estudou nas questões 1-5 acima?
+7. Qual é o endereço IP de origem usado no datagrama IP que contém a mensagem de Oferta? Há algo de especial neste endereço? Explique.
+8. Qual é o endereço IP de destino utilizado no datagrama que contém a mensagem de Oferta? Há algo de especial neste endereço? Explique. 
+9. Agora inspecione o campo de opções na mensagem DHCP Offer. Quais são as cinco informações que o servidor DHCP está fornecendo ao cliente DHCP na mensagem DHCP Offer?
+
+Parece que, uma vez recebida a mensagem de oferta de DHCP, o cliente pode ter todas as informações necessárias para prosseguir. No entanto, o cliente pode ter recebido OFERTAS de vários servidores DHCP e, portanto, é necessária uma segunda fase, com mais duas mensagens obrigatórias – a mensagem DHCP Request cliente-servidor e a mensagem DHCP ACK servidor-cliente é necessária. Mas pelo menos o cliente sabe que existe pelo menos um servidor DHCP por aí! Vamos dar uma olhada na mensagem DHCP Request, lembrando que embora já tenhamos visto uma mensagem Discover em nosso trace, nem sempre é o caso quando uma mensagem de solicitação DHCP é enviada.
+
+Localize o datagrama IP que contém a primeira mensagem de solicitação de DHCP em seu rastreamento e responda às perguntas a seguir.
+10. Qual é o número da porta de origem UDP no datagrama IP que contém a primeira mensagem de solicitação de DHCP em seu rastreamento? Qual é o número da porta de destino UDP que está sendo usado?
+11. Qual é o endereço IP de origem no datagrama IP que contém esta mensagem de solicitação? Há algo de especial neste endereço? Explique.
+12. Qual é o endereço IP de destino usado no datagrama que contém esta mensagem de solicitação. Há algo de especial neste endereço? Explique.
+13. Qual é o valor no campo ID da transação desta mensagem de solicitação de DHCP? Ele corresponde aos IDs de transação das mensagens anteriores de descoberta e oferta?
+14. Agora inspecione o campo de opções na mensagem DHCP Discover e dê uma olhada na “Lista de Solicitações de Parâmetros”. O DHCP RFC observa que
+“O cliente pode informar ao servidor quais parâmetros de configuração o cliente está interessado incluindo a opção 'lista de solicitações de parâmetros'. A parte de dados desta opção lista explicitamente as opções solicitadas pelo número da etiqueta.”
+Que diferenças você vê entre as entradas na opção 'lista de solicitações de parâmetros' nesta mensagem de solicitação e a mesma opção de lista na mensagem anterior de descoberta?
+
+Localize o datagrama IP que contém a primeira mensagem DHCP ACK em seu rastreamento e responda às seguintes perguntas.
+15. Qual é o endereço IP de origem no datagrama IP que contém esta mensagem ACK? Há algo de especial neste endereço? Explique.
+16. Qual é o endereço IP de destino usado no datagrama que contém esta mensagem ACK. Há algo de especial neste endereço? Explique.
+17. Qual é o nome do campo na mensagem DHCP ACK (como indicado na janela Wireshark) que contém o endereço IP do cliente atribuído?
+18. Há quanto tempo (o chamado “lease time”) o servidor DHPC atribui esse endereço IP ao cliente?
+19. Qual é o endereço IP (retornado pelo servidor DHCP ao cliente DHCP nesta mensagem DHCP ACK) do roteador de primeiro salto no caminho padrão do cliente para o resto da Internet?
+
