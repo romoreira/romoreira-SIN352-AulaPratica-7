@@ -133,3 +133,13 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 | 1 | 192.168.0.2 | 255.255.255.0 |
 | 2 | 192.168.1.1 | 255.255.255.0 |
 | 3 | 192.168.1.2 | 255.255.255.0 |
+
+
+* Abra o Promp comand de um dos computadores da sua topologia, para isso, clique no PC e abrirá a janela onde você poderá escolher a aplicação que quer abrir. Figura abaixo:
+
+![Topology](prompt.PNG)
+
+Pede-se:
+
+1. Tente pingar os PCs/Laptops conforme os IPs da Tabela acima. `ping 192.168.X.X`. Quais máquinas foi possível pingar? Qual a razão dos pings?
+2. Configure os PCs com uma máscara que permita que todos os hosts se pinguem mutualmente. Qual foi a máscara? 
