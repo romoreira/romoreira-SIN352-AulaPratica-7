@@ -96,3 +96,6 @@ Localize o datagrama IP que contém a primeira mensagem DHCP ACK em seu rastream
 18. Há quanto tempo (o chamado “lease time”) o servidor DHPC atribui esse endereço IP ao cliente?
 19. Qual é o endereço IP (retornado pelo servidor DHCP ao cliente DHCP nesta mensagem DHCP ACK) do roteador de primeiro salto no caminho padrão do cliente para o resto da Internet?
 
+***
+
+## Endereçamento IPv4 :globe_with_meridians:
