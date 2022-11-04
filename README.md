@@ -127,7 +127,7 @@ Neste laboratório vamos criar uma simples rede Local Area Network (LAN) para co
 
 ![PC Config](laptop-config.PNG)
 
-| PC/Laptop     | IP Address    | Mask | 
+| PC/Laptop | IP Address | Mask | 
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
